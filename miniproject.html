@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>MICRO PROJECT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Student Form Using JPDB API </h2>
+            </div>
+            <form id="studentform" method="get">
+                <div class="form-group">
+                    <label>Student ROLL NO :</label>
+                    <input type="text" id="rollno" class="form-control" onchange="getRoll()">
+                </div>
+                <div class="form-group">
+                    <label>Student FULL NAME :</label>
+                    <input type="text" id="fn" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>Student ENROLLMENT-DATE :</label>
+                    <input type="text" id="jdate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Student CLASS :</label>
+                    <input type="text" id="cls" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Student DATE OF BIRTH :</label>
+                    <input type="text" id="dob" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Student ADDRESS :</label>
+                    <input type="text" id="add" class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class='btn btn-lg btn-primary' id="save" onclick="saveData()" disabled> SAVE</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>CHANGE</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="reser" onclick="resetData()" disabled>RESET</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
